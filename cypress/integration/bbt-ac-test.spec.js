@@ -20,12 +20,15 @@
     describe('bbt actions', () => {
       before(() => {
         navigate() 
-        // cy.wait(1000) 
+        cy.wait(1500) 
+        cy.fixture("testData/postCode").as("postCode")
+        cy.viewport(1280, 720)
       
   })
 
   it('should enter postcode and click checkNow', () => {
-    postcode('BR31DJ')
+    postcode('BR32DJ')
+
 
     })
 

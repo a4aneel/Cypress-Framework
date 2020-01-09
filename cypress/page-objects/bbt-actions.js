@@ -2,11 +2,14 @@
 
 
 export function navigate() {
-    cy.visit('https://pages-apps-tdm.cf.dev-paas.bskyb.com/shop/start/join-broadband-and-talk/default')
+    // cy.visit('https://pages-apps.e02.cf.dev-paas.bskyb.com/shop/start/join-broadband-and-talk/default')
+    cy.visit('https://pages-apps-e02.cf.dev-paas.bskyb.com/shop/start/join-broadband-and-talk/default')
+
 }
 
 export function postcode(enterPostcode) {
     cy.get('input[name ="postcode"]').type(enterPostcode + '{enter}')
+    
 
 }
 
@@ -18,6 +21,7 @@ export function selectAddress() {
 
 export function customerAddressStatus() {
     cy.get(':nth-child(2) > .c-form-checkbox__caption').contains('moving').click()
+    cy.wait(1000)
     cy.get('form > .c-btn').click()
     cy.get('[data-test-id="toolkit-select-input-dropdown"]').find('option').then($elm => $elm.get(1).setAttribute('selected', "selected")).parent().trigger('change')
     cy.get('.c-btn > span').click()
@@ -97,6 +101,8 @@ export function enterPaymentDetails() {
 export function validateOrderConfirmation() {
 
 }
+
+
 
 
 
