@@ -24,3 +24,15 @@ install cypress into the same folder where your tests will be (ex:package.json)
 Using CL - npx cypress open
 
 Headless using CL - npx cypress run
+
+# Report generation
+
+Using mochawesome and mochawesome-merge
+
+Run - npm install --save-dev mocha mochawesome mochawesome-merge mochawesome-report-generator
+
+downgrade mocha version to 5.2.0 (npm install mocha@5.2.0)
+
+Run the test in headless mode - npn cypress run
+
+Results are printed in the terminal and html, json version reports are available in reports folder under the root directory
