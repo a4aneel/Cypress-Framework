@@ -1,14 +1,19 @@
 {
     "chromeWebSecurity": false,
+    "video": false,
+  "screenshotOnRunFailure": false,
     "reporter": "mochawesome",
     "reporterOptions": {
         "reportDir": "cypress/report/mochawesome-report",
         "overwrite": false,
-        "html": true,
+        "html": false,
         "json": true,
         "timestamp": "mmddyyyy_HHMMss"
+        
 
 }
 }
+
+
 
 

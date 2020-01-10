@@ -2,8 +2,7 @@
 
 
 export function navigate() {
-    // cy.visit('https://pages-apps.e02.cf.dev-paas.bskyb.com/shop/start/join-broadband-and-talk/default')
-    cy.visit('https://pages-apps-e02.cf.dev-paas.bskyb.com/shop/start/join-broadband-and-talk/default')
+    cy.visit('https://pages-apps-tdm.cf.dev-paas.bskyb.com/shop/start/join-broadband-and-talk/default')
 
 }
 
@@ -20,11 +19,10 @@ export function selectAddress() {
 }
 
 export function customerAddressStatus() {
-    cy.get(':nth-child(2) > .c-form-checkbox__caption').contains('moving').click()
-    cy.wait(1000)
-    cy.get('form > .c-btn').click()
-    cy.get('[data-test-id="toolkit-select-input-dropdown"]').find('option').then($elm => $elm.get(1).setAttribute('selected', "selected")).parent().trigger('change')
-    cy.get('.c-btn > span').click()
+    // cy.get(':nth-child(2) > .c-form-checkbox__caption').contains('moving').click()
+    // cy.get('form > .c-btn').click()
+    // cy.get('[data-test-id="toolkit-select-input-dropdown"]').find('option').then($elm => $elm.get(1).setAttribute('selected', "selected")).parent().trigger('change')
+    // cy.get('.c-btn > span').click()
 }
 
 export function validateSuperfastCard() {
@@ -73,6 +71,7 @@ export function fillAdditionalDetails() {
     cy.get('[data-test-id="toolkit-checkbox-text"]').contains('bill payments').click()
     cy.wait(2000)
     cy.get('[data-test-id="toolkit-clickable-text"]').contains('Continue').click({ force: true })
+    cy.wait(2000)
 
 }
 
@@ -100,6 +99,14 @@ export function enterPaymentDetails() {
 
 export function validateOrderConfirmation() {
 
+}
+
+export function selectEngineerAppointment() {
+    //Pick default day and time
+    
+    cy.get('.c-btn > span').click()
+
+    
 }
 
 

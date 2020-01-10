@@ -1,0 +1,378 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 13,
+    "passes": 2,
+    "pending": 0,
+    "failures": 11,
+    "start": "2020-01-09T15:09:39.978Z",
+    "end": "2020-01-09T15:10:37.847Z",
+    "duration": 57869,
+    "testsRegistered": 13,
+    "passPercent": 15.384615384615385,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "08c4e985-4c06-4894-b3f3-0ba909066039",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c007d794-18f6-46ae-962d-1d2128f52a4d",
+          "title": "bbt actions",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should enter postcode and click checkNow",
+              "fullTitle": "bbt actions should enter postcode and click checkNow",
+              "timedOut": null,
+              "duration": 6386,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _bbtActions.postcode)('BR32DJ');",
+              "err": {},
+              "uuid": "abf89296-8bad-4473-b921-a7a4171b0b45",
+              "parentUUID": "c007d794-18f6-46ae-962d-1d2128f52a4d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should select address and continue",
+              "fullTitle": "bbt actions should select address and continue",
+              "timedOut": null,
+              "duration": 4574,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "(0, _bbtActions.selectAddress)();",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '[data-test-id=\"toolkit-select-input-dropdown\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '[data-test-id=\"toolkit-select-input-dropdown\"]', but never found it.\n    at Object.cypressErr (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:106136:11)\n    at Object.throwErr (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:106091:18)\n    at Object.throwErrByPath (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:106123:17)\n    at retry (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:96804:16)\n    at onFailFn (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:85633:16)\n    at tryCatcher (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:140400:23)\n    at Promise._settlePromiseFromHandler (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138336:31)\n    at Promise._settlePromise (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138393:18)\n    at Promise._settlePromise0 (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138438:10)\n    at Promise._settlePromises (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138513:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:135125:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:135135:10)\n    at Async.drainQueues (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:135009:14)",
+                "diff": null
+              },
+              "uuid": "8ef6ba12-945f-4978-83ac-27d3cf11457b",
+              "parentUUID": "c007d794-18f6-46ae-962d-1d2128f52a4d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should select address status",
+              "fullTitle": "bbt actions should select address status",
+              "timedOut": null,
+              "duration": 4458,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "(0, _bbtActions.customerAddressStatus)();",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: ':nth-child(2) > .c-form-checkbox__caption', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: ':nth-child(2) > .c-form-checkbox__caption', but never found it.\n    at Object.cypressErr (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:106136:11)\n    at Object.throwErr (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:106091:18)\n    at Object.throwErrByPath (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:106123:17)\n    at retry (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:96804:16)\n    at onFailFn (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:85633:16)\n    at tryCatcher (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:140400:23)\n    at Promise._settlePromiseFromHandler (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138336:31)\n    at Promise._settlePromise (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138393:18)\n    at Promise._settlePromise0 (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138438:10)\n    at Promise._settlePromises (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138513:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:135125:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:135135:10)\n    at Async.drainQueues (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:135009:14)",
+                "diff": null
+              },
+              "uuid": "9414ec7b-1065-409c-ae56-f6813446df41",
+              "parentUUID": "c007d794-18f6-46ae-962d-1d2128f52a4d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "validate the superfast product card",
+              "fullTitle": "bbt actions validate the superfast product card",
+              "timedOut": null,
+              "duration": 4465,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "(0, _bbtActions.validateSuperfastCard)();",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '[data-test-id=\"broadband-selection-SKY_FIBRE_SOGEA_80_BROADBAND\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '[data-test-id=\"broadband-selection-SKY_FIBRE_SOGEA_80_BROADBAND\"]', but never found it.\n    at Object.cypressErr (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:106136:11)\n    at Object.throwErr (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:106091:18)\n    at Object.throwErrByPath (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:106123:17)\n    at retry (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:96804:16)\n    at onFailFn (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:85633:16)\n    at tryCatcher (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:140400:23)\n    at Promise._settlePromiseFromHandler (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138336:31)\n    at Promise._settlePromise (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138393:18)\n    at Promise._settlePromise0 (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138438:10)\n    at Promise._settlePromises (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138513:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:135125:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:135135:10)\n    at Async.drainQueues (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:135009:14)",
+                "diff": null
+              },
+              "uuid": "d37f298e-4298-44e1-afd5-20165ff15078",
+              "parentUUID": "c007d794-18f6-46ae-962d-1d2128f52a4d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "validate the superfast product card",
+              "fullTitle": "bbt actions validate the superfast product card",
+              "timedOut": null,
+              "duration": 4462,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "(0, _bbtActions.addBBTProductToBasket)();",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '[data-test-id=\"toolkit-radio-button-text\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '[data-test-id=\"toolkit-radio-button-text\"]', but never found it.\n    at Object.cypressErr (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:106136:11)\n    at Object.throwErr (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:106091:18)\n    at Object.throwErrByPath (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:106123:17)\n    at retry (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:96804:16)\n    at onFailFn (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:85633:16)\n    at tryCatcher (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:140400:23)\n    at Promise._settlePromiseFromHandler (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138336:31)\n    at Promise._settlePromise (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138393:18)\n    at Promise._settlePromise0 (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138438:10)\n    at Promise._settlePromises (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138513:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:135125:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:135135:10)\n    at Async.drainQueues (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:135009:14)",
+                "diff": null
+              },
+              "uuid": "9ed4c61d-8cb7-4295-84f2-a865a0e239b6",
+              "parentUUID": "c007d794-18f6-46ae-962d-1d2128f52a4d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "validate the boost product card",
+              "fullTitle": "bbt actions validate the boost product card",
+              "timedOut": null,
+              "duration": 4494,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "(0, _bbtActions.validateBoostCard)();",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '[data-test-id=\"molecule-costing\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '[data-test-id=\"molecule-costing\"]', but never found it.\n    at Object.cypressErr (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:106136:11)\n    at Object.throwErr (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:106091:18)\n    at Object.throwErrByPath (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:106123:17)\n    at retry (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:96804:16)\n    at onFailFn (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:85633:16)\n    at tryCatcher (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:140400:23)\n    at Promise._settlePromiseFromHandler (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138336:31)\n    at Promise._settlePromise (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138393:18)\n    at Promise._settlePromise0 (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138438:10)\n    at Promise._settlePromises (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138513:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:135125:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:135135:10)\n    at Async.drainQueues (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:135009:14)",
+                "diff": null
+              },
+              "uuid": "739d3cb9-0254-4ed9-a112-fcb3e1530d7d",
+              "parentUUID": "c007d794-18f6-46ae-962d-1d2128f52a4d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "validate the talk product card",
+              "fullTitle": "bbt actions validate the talk product card",
+              "timedOut": null,
+              "duration": 4412,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "(0, _bbtActions.validateTalkProducts)();",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '[data-test-id=\"selection-heading-text\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '[data-test-id=\"selection-heading-text\"]', but never found it.\n    at Object.cypressErr (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:106136:11)\n    at Object.throwErr (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:106091:18)\n    at Object.throwErrByPath (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:106123:17)\n    at retry (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:96804:16)\n    at onFailFn (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:85633:16)\n    at tryCatcher (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:140400:23)\n    at Promise._settlePromiseFromHandler (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138336:31)\n    at Promise._settlePromise (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138393:18)\n    at Promise._settlePromise0 (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138438:10)\n    at Promise._settlePromises (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138513:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:135125:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:135135:10)\n    at Async.drainQueues (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:135009:14)",
+                "diff": null
+              },
+              "uuid": "568ae61f-3b8f-4c53-aa55-8939b9682b6f",
+              "parentUUID": "c007d794-18f6-46ae-962d-1d2128f52a4d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "navigate to order summary page",
+              "fullTitle": "bbt actions navigate to order summary page",
+              "timedOut": null,
+              "duration": 4490,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "(0, _bbtActions.pageNavigationCheckout)();",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find content: 'Checkout' within the element: [ <span>, 2 more... ] but never did.",
+                "estack": "CypressError: Timed out retrying: Expected to find content: 'Checkout' within the element: [ <span>, 2 more... ] but never did.\n    at Object.cypressErr (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:106136:11)\n    at Object.throwErr (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:106091:18)\n    at Object.throwErrByPath (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:106123:17)\n    at retry (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:96804:16)\n    at onFailFn (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:85633:16)\n    at tryCatcher (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:140400:23)\n    at Promise._settlePromiseFromHandler (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138336:31)\n    at Promise._settlePromise (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138393:18)\n    at Promise._settlePromise0 (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138438:10)\n    at Promise._settlePromises (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138513:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:135125:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:135135:10)\n    at Async.drainQueues (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:135009:14)",
+                "diff": null
+              },
+              "uuid": "3bd07ab4-3c6c-40f2-b09c-e3ee10b041df",
+              "parentUUID": "c007d794-18f6-46ae-962d-1d2128f52a4d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should enter customer details",
+              "fullTitle": "bbt actions should enter customer details",
+              "timedOut": null,
+              "duration": 4489,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "(0, _bbtActions.fillCustomerDetails)('Rowan', 'Atkinson', '01-01-1970', '01234567890', 'rowan@sky.com');",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '[data-test-id=\"form-field-input-title\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '[data-test-id=\"form-field-input-title\"]', but never found it.\n    at Object.cypressErr (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:106136:11)\n    at Object.throwErr (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:106091:18)\n    at Object.throwErrByPath (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:106123:17)\n    at retry (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:96804:16)\n    at onFailFn (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:85633:16)\n    at tryCatcher (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:140400:23)\n    at Promise._settlePromiseFromHandler (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138336:31)\n    at Promise._settlePromise (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138393:18)\n    at Promise._settlePromise0 (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138438:10)\n    at Promise._settlePromises (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138513:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:135125:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:135135:10)\n    at Async.drainQueues (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:135009:14)",
+                "diff": null
+              },
+              "uuid": "b4eceed7-ad0e-45db-975f-1c559d40c561",
+              "parentUUID": "c007d794-18f6-46ae-962d-1d2128f52a4d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should enter additional details",
+              "fullTitle": "bbt actions should enter additional details",
+              "timedOut": null,
+              "duration": 4506,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "(0, _bbtActions.fillAdditionalDetails)();",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: ':nth-child(1) > .c-form-checkbox__caption', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: ':nth-child(1) > .c-form-checkbox__caption', but never found it.\n    at Object.cypressErr (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:106136:11)\n    at Object.throwErr (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:106091:18)\n    at Object.throwErrByPath (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:106123:17)\n    at retry (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:96804:16)\n    at onFailFn (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:85633:16)\n    at tryCatcher (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:140400:23)\n    at Promise._settlePromiseFromHandler (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138336:31)\n    at Promise._settlePromise (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138393:18)\n    at Promise._settlePromise0 (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138438:10)\n    at Promise._settlePromises (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138513:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:135125:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:135135:10)\n    at Async.drainQueues (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:135009:14)",
+                "diff": null
+              },
+              "uuid": "3bda7ebc-6796-4105-981a-71cdfe7fa4c6",
+              "parentUUID": "c007d794-18f6-46ae-962d-1d2128f52a4d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verify line items from order summary page",
+              "fullTitle": "bbt actions verify line items from order summary page",
+              "timedOut": null,
+              "duration": 4618,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "(0, _bbtActions.validateOrderSummaryPage)();",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '[data-test-id=\"line-item-WIFI_GUARANTEE\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '[data-test-id=\"line-item-WIFI_GUARANTEE\"]', but never found it.\n    at Object.cypressErr (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:106136:11)\n    at Object.throwErr (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:106091:18)\n    at Object.throwErrByPath (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:106123:17)\n    at retry (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:96804:16)\n    at onFailFn (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:85633:16)\n    at tryCatcher (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:140400:23)\n    at Promise._settlePromiseFromHandler (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138336:31)\n    at Promise._settlePromise (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138393:18)\n    at Promise._settlePromise0 (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138438:10)\n    at Promise._settlePromises (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138513:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:135125:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:135135:10)\n    at Async.drainQueues (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:135009:14)",
+                "diff": null
+              },
+              "uuid": "0b24fd32-0cec-43f2-be5e-6d9aa71a91ba",
+              "parentUUID": "c007d794-18f6-46ae-962d-1d2128f52a4d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "enter payment details and confirm the order",
+              "fullTitle": "bbt actions enter payment details and confirm the order",
+              "timedOut": null,
+              "duration": 4487,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "(0, _bbtActions.enterPaymentDetails)();",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: 'div.u-margin-bottom > iframe', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: 'div.u-margin-bottom > iframe', but never found it.\n    at Object.cypressErr (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:106136:11)\n    at Object.throwErr (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:106091:18)\n    at Object.throwErrByPath (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:106123:17)\n    at retry (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:96804:16)\n    at onFailFn (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:85633:16)\n    at tryCatcher (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:140400:23)\n    at Promise._settlePromiseFromHandler (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138336:31)\n    at Promise._settlePromise (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138393:18)\n    at Promise._settlePromise0 (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138438:10)\n    at Promise._settlePromises (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:138513:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:135125:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:135135:10)\n    at Async.drainQueues (https://pages-apps-e02.cf.dev-paas.bskyb.com/__cypress/runner/cypress_runner.js:135009:14)",
+                "diff": null
+              },
+              "uuid": "1bc1e818-ca72-4f89-8699-5cd1f6cb27b8",
+              "parentUUID": "c007d794-18f6-46ae-962d-1d2128f52a4d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verify order confirmation page",
+              "fullTitle": "bbt actions verify order confirmation page",
+              "timedOut": null,
+              "duration": 23,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _bbtActions.validateOrderConfirmation)();",
+              "err": {},
+              "uuid": "910e5981-ff63-4199-bbe8-9f7ace23e734",
+              "parentUUID": "c007d794-18f6-46ae-962d-1d2128f52a4d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "abf89296-8bad-4473-b921-a7a4171b0b45",
+            "910e5981-ff63-4199-bbe8-9f7ace23e734"
+          ],
+          "failures": [
+            "8ef6ba12-945f-4978-83ac-27d3cf11457b",
+            "9414ec7b-1065-409c-ae56-f6813446df41",
+            "d37f298e-4298-44e1-afd5-20165ff15078",
+            "9ed4c61d-8cb7-4295-84f2-a865a0e239b6",
+            "739d3cb9-0254-4ed9-a112-fcb3e1530d7d",
+            "568ae61f-3b8f-4c53-aa55-8939b9682b6f",
+            "3bd07ab4-3c6c-40f2-b09c-e3ee10b041df",
+            "b4eceed7-ad0e-45db-975f-1c559d40c561",
+            "3bda7ebc-6796-4105-981a-71cdfe7fa4c6",
+            "0b24fd32-0cec-43f2-be5e-6d9aa71a91ba",
+            "1bc1e818-ca72-4f89-8699-5cd1f6cb27b8"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 55864,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "5.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report/mochawesome-report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "4.1.0"
+    }
+  }
+}
