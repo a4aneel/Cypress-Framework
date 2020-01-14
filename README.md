@@ -15,7 +15,7 @@ create a directory/folder - in which you save your tests
 
 using terminal in vs code create the package.json
 
-using npm package install cypress
+using npm package install cypress - $npm install cypress --save-dev
 
 install cypress into the same folder where your tests will be (ex:package.json) 
 
